@@ -21,3 +21,11 @@ Where `4.4.0` is any version of openCV from 2.2 to 4.4.0
 (any valid OpenCV git branch or tag will also attempt to work, however the very old versions have not been tested to build and may require spript modifications.).
 
 **JetPack 4.4 NOTE:** the minimum version that will build correctly on JetPack 4.4 GA is 4.4.0. Prior versions of JetPack may need the CUDNN version adjusted (the `-D CUDNN_VERSION='8.0'` line can simply be removed).
+
+[
+    {"key":"alt+left", "command": "workbench.action.navigateBack"},
+    {"key":"alt+right", "command": "workbench.action.navigateForward"},
+    {"key":"ctrl+o", "command": "workbench.action.gotoSymbol"},
+    {"key":"ctrl+shift+g", "command": "references-view.findReferences", "when": "editorHasReferenceProvider"},
+    { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+]
