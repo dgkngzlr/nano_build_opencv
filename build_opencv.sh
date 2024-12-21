@@ -5,7 +5,7 @@ set -e
 
 # change default constants here:
 readonly PREFIX=/usr/local  # install prefix, (can be ~/.local for a user install)
-readonly DEFAULT_VERSION=4.4.0  # controls the default version (gets reset by the first argument)
+readonly DEFAULT_VERSION=4.10.0  # controls the default version (gets reset by the first argument)
 readonly CPUS=$(nproc)  # controls the number of jobs
 
 # better board detection. if it has 6 or more cpus, it probably has a ton of ram too
@@ -107,10 +107,10 @@ configure () {
         -D BUILD_opencv_python3=ON
         -D CMAKE_BUILD_TYPE=RELEASE
         -D CMAKE_INSTALL_PREFIX=${PREFIX}
-        -D CUDA_ARCH_BIN=5.3,6.2,7.2,8.7
+        -D CUDA_ARCH_BIN=8.7
         -D CUDA_ARCH_PTX=
         -D CUDA_FAST_MATH=ON
-        -D CUDNN_VERSION='8.0'
+        -D CUDNN_VERSION='8.6'
         -D EIGEN_INCLUDE_PATH=/usr/include/eigen3 
         -D ENABLE_NEON=ON
         -D OPENCV_DNN_CUDA=ON
